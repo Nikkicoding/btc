@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Breaking the Cycle | PCOS Awareness Nonprofit</title>
+    <title>BreakingTheCycle | PCOS Awareness Nonprofit</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
@@ -15,7 +15,7 @@
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <a href="#home" class="nav-logo">
-                <img src="logo.png" alt="Breaking the Cycle Logo">
+                <img src="logo.png" alt="BreakingTheCycle Logo">
             </a>
             <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
                 <span></span>
@@ -23,131 +23,184 @@
                 <span></span>
             </button>
             <ul class="nav-menu" id="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About Us</a></li>
-                <li><a href="#facts" class="nav-link">PCOS Facts</a></li>
-                <li><a href="#impact" class="nav-link">Our Impact</a></li>
-                <li><a href="#team" class="nav-link">Our Team</a></li>
-                <li><a href="#podcast" class="nav-link">Podcast</a></li>
-                <li><a href="#events" class="nav-link">Events</a></li>
-                <li><a href="#donate" class="nav-link donate-btn">Donate</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#programs" class="nav-link">Programs</a></li>
+                <li><a href="#donate" class="nav-link">Fundraise With Us</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="https://www.instagram.com/breakingthecycle28" target="_blank" rel="noopener" class="nav-link nav-icon-link"><i class="fa-brands fa-instagram"></i></a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <div class="hero-overlay"></div>
         <div class="hero-content">
-            <img src="logo.png" class="hero-logo" alt="Breaking the Cycle Logo">
-            <h1>Breaking the Cycle</h1>
-            <p class="hero-tagline">Empowering young women through PCOS awareness, education, and community support.</p>
-            <div class="hero-buttons">
-                <a href="#about" class="btn btn-primary">Learn More</a>
-                <a href="#donate" class="btn btn-secondary">Support Us</a>
+            <p class="hero-eyebrow">Youth-Led Nonprofit</p>
+            <h1 class="hero-headline">A youth-led nonprofit where expert knowledge meets practical application to drive awareness, fund research, and support women everywhere.</h1>
+            <a href="#about" class="btn btn-hero">Learn more</a>
+        </div>
+        <div class="hero-scroll-indicator">
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee-section">
+        <div class="marquee-track">
+            <span>Empowering Women</span>
+            <span class="marquee-dot">✦</span>
+            <span>Empowering Women</span>
+            <span class="marquee-dot">✦</span>
+            <span>Empowering Women</span>
+            <span class="marquee-dot">✦</span>
+            <span>Empowering Women</span>
+            <span class="marquee-dot">✦</span>
+            <span>Empowering Women</span>
+            <span class="marquee-dot">✦</span>
+            <span>Empowering Women</span>
+            <span class="marquee-dot">✦</span>
+            <!-- Duplicate for seamless loop -->
+            <span aria-hidden="true">Empowering Women</span>
+            <span class="marquee-dot" aria-hidden="true">✦</span>
+            <span aria-hidden="true">Empowering Women</span>
+            <span class="marquee-dot" aria-hidden="true">✦</span>
+            <span aria-hidden="true">Empowering Women</span>
+            <span class="marquee-dot" aria-hidden="true">✦</span>
+            <span aria-hidden="true">Empowering Women</span>
+            <span class="marquee-dot" aria-hidden="true">✦</span>
+            <span aria-hidden="true">Empowering Women</span>
+            <span class="marquee-dot" aria-hidden="true">✦</span>
+            <span aria-hidden="true">Empowering Women</span>
+            <span class="marquee-dot" aria-hidden="true">✦</span>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="section two-col-section">
+        <div class="section-container">
+            <div class="two-col-grid">
+                <div class="two-col-image">
+                    <img src="stbl.jpg" alt="BreakingTheCycle Team">
+                </div>
+                <div class="two-col-text">
+                    <p class="section-eyebrow">Who We Are</p>
+                    <h2 class="section-title left-align">About us</h2>
+                    <div class="section-line left-align"></div>
+                    <p>BreakingTheCycle is a youth-led non-profit organization raising awareness about PCOS (Polycystic Ovarian Syndrome). Our mission is to inform as many young women as possible about PCOS and its life changing effects.</p>
+                    <p>We are based in Chandler, Arizona, but we are always expanding to reach more and more people through our growing network of chapters nationwide.</p>
+                    <a href="#programs" class="btn btn-primary" style="margin-top: 28px; display: inline-block;">Our Programs</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- About Us -->
-    <section id="about" class="section">
+    <!-- Why PCOS Section -->
+    <section id="why-pcos" class="section two-col-section section-alt">
         <div class="section-container">
-            <h2 class="section-title">About Us</h2>
-            <div class="section-line"></div>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>BreakingTheCycle is a youth-led nonprofit organization focused on raising awareness about Polycystic Ovarian Syndrome (PCOS) among young women.</p>
-                    <p>PCOS is a hormonal condition that affects many women and even their journey into motherhood. However, it is commonly misunderstood, which is why our mission is to help women better understand PCOS, its impact, and provide resources for managing the condition.</p>
-                    <p>We are based in Chandler, Arizona, but we are always expanding to reach more and more people!</p>
+            <div class="two-col-grid reverse">
+                <div class="two-col-text">
+                    <p class="section-eyebrow">The Issue</p>
+                    <h2 class="section-title left-align">Why PCOS?</h2>
+                    <div class="section-line left-align"></div>
+                    <p>Polycystic Ovary Syndrome (PCOS) is one of the most common hormonal disorders, affecting an estimated <strong>1 in 10 women</strong> of reproductive age worldwide.</p>
+                    <p>Despite its prevalence, it is frequently underdiagnosed and misunderstood — many individuals face delays in diagnosis and limited access to comprehensive care. Increasing awareness can lead to earlier recognition and intervention, while access to reliable resources helps individuals manage symptoms, understand treatment options, and build supportive communities.</p>
                 </div>
-                <div class="about-image">
-                    <img src="stbl.jpg" alt="Breaking the Cycle Team">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- PCOS Facts -->
-    <section id="facts" class="section section-alt">
-        <div class="section-container">
-            <h2 class="section-title">PCOS Facts &amp; Statistics</h2>
-            <div class="section-line"></div>
-            <div class="facts-grid">
-                <div class="fact-card">
-                    <div class="fact-icon"><i class="fa-solid fa-users"></i></div>
-                    <h3>1 in 10</h3>
-                    <p>women of childbearing age are affected by PCOS worldwide</p>
-                </div>
-                <div class="fact-card">
-                    <div class="fact-icon"><i class="fa-solid fa-circle-question"></i></div>
-                    <h3>70%</h3>
-                    <p>of women with PCOS remain undiagnosed</p>
-                </div>
-                <div class="fact-card">
-                    <div class="fact-icon"><i class="fa-solid fa-heart-pulse"></i></div>
-                    <h3>#1 Cause</h3>
-                    <p>PCOS is the leading cause of infertility in women</p>
-                </div>
-                <div class="fact-card">
-                    <div class="fact-icon"><i class="fa-solid fa-globe"></i></div>
-                    <h3>5 Million+</h3>
-                    <p>women in the U.S. alone are estimated to have PCOS</p>
+                <div class="two-col-image">
+                    <img src="stbl.jpg" alt="PCOS Awareness">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Impact Section -->
-    <section id="impact" class="section">
+    <section id="impact" class="section impact-section">
         <div class="section-container">
             <h2 class="section-title">Our Impact</h2>
             <div class="section-line"></div>
+            <p class="section-subtitle">From educational outreach to research funding, our work turns awareness into action.</p>
             <div class="impact-grid">
                 <div class="impact-card">
-                    <div class="impact-number">500+</div>
-                    <p>PCOS kits distributed to clinics across the Phoenix area</p>
+                    <div class="impact-number" data-target="6700" data-prefix="$" data-suffix="+">$0+</div>
+                    <p>Raised for PCOS Research</p>
                 </div>
                 <div class="impact-card">
-                    <div class="impact-number">1,000+</div>
-                    <p>Women reached through our podcast and awareness campaigns</p>
+                    <div class="impact-number" data-target="120000" data-comma="true">0</div>
+                    <p>Reached through Social Media</p>
                 </div>
                 <div class="impact-card">
-                    <div class="impact-number">10+</div>
-                    <p>Clinics partnered with across Arizona</p>
+                    <div class="impact-number" data-target="120" data-suffix="+">0+</div>
+                    <p>Volunteers</p>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-number" data-target="5">0</div>
+                    <p>Chapters</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Team Section -->
-    <section id="team" class="section section-alt">
+    <!-- Partners Section -->
+    <section id="partners" class="section section-alt">
         <div class="section-container">
-            <h2 class="section-title">Our Team</h2>
+            <h2 class="section-title">Worked With Leading Businesses and Organizations</h2>
             <div class="section-line"></div>
-            <p class="section-subtitle">Meet the passionate young leaders behind Breaking the Cycle.</p>
-            <div class="team-grid">
-                <div class="team-card">
-                    <div class="team-photo-placeholder"><i class="fa-solid fa-user"></i></div>
-                    <h3>Founder Name</h3>
-                    <span class="team-role">Founder &amp; President</span>
-                    <p>Passionate about women's health advocacy and PCOS awareness.</p>
+            <div class="partners-grid">
+                <div class="partner-card">Boston Children's Hospital</div>
+                <div class="partner-card">PCOS Challenge</div>
+                <div class="partner-card">The PCOS Society</div>
+                <div class="partner-card">PCOS Awareness Association</div>
+                <div class="partner-card">Endocrine Society</div>
+                <div class="partner-card">Brown University</div>
+                <div class="partner-card">NIH Women's Health</div>
+                <div class="partner-card">Mayo Clinic</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section">
+        <div class="section-container">
+            <h2 class="section-title">Our Work In Action</h2>
+            <div class="section-line"></div>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="stbl.jpg" alt="BTC Event"></div>
+                <div class="gallery-item tall"><img src="stbl.jpg" alt="BTC Event"></div>
+                <div class="gallery-item"><img src="stbl.jpg" alt="BTC Event"></div>
+                <div class="gallery-item"><img src="stbl.jpg" alt="BTC Event"></div>
+                <div class="gallery-item wide"><img src="stbl.jpg" alt="BTC Event"></div>
+                <div class="gallery-item"><img src="stbl.jpg" alt="BTC Event"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="section section-alt">
+        <div class="section-container">
+            <h2 class="section-title">Our Programs</h2>
+            <div class="section-line"></div>
+            <p class="section-subtitle">From podcasts to community events, here's how we take action.</p>
+            <div class="programs-grid">
+                <div class="program-card">
+                    <div class="program-icon"><i class="fa-solid fa-microphone-lines"></i></div>
+                    <h3>The PCOS Diaries</h3>
+                    <p>Our podcast where we interview PCOS specialists and provide reliable information for those navigating life with PCOS.</p>
+                    <a href="#podcast" class="program-link">Watch Episodes →</a>
                 </div>
-                <div class="team-card">
-                    <div class="team-photo-placeholder"><i class="fa-solid fa-user"></i></div>
-                    <h3>Co-Founder Name</h3>
-                    <span class="team-role">Co-Founder &amp; Vice President</span>
-                    <p>Dedicated to expanding outreach and community partnerships.</p>
+                <div class="program-card">
+                    <div class="program-icon"><i class="fa-solid fa-kit-medical"></i></div>
+                    <h3>PCOS Kit Distribution</h3>
+                    <p>We distribute PCOS kits to clinics across the Phoenix area to help women better understand their condition.</p>
                 </div>
-                <div class="team-card">
-                    <div class="team-photo-placeholder"><i class="fa-solid fa-user"></i></div>
-                    <h3>Team Member Name</h3>
-                    <span class="team-role">Director of Outreach</span>
-                    <p>Leading our clinic partnerships and PCOS kit distribution efforts.</p>
+                <div class="program-card">
+                    <div class="program-icon"><i class="fa-solid fa-person-walking"></i></div>
+                    <h3>PCOS Awareness Walk</h3>
+                    <p>Annual walk in September for National PCOS Awareness Month, bringing the community together to raise awareness.</p>
                 </div>
-                <div class="team-card">
-                    <div class="team-photo-placeholder"><i class="fa-solid fa-user"></i></div>
-                    <h3>Team Member Name</h3>
-                    <span class="team-role">Podcast Producer</span>
-                    <p>Producing and hosting The PCOS Diaries podcast.</p>
+                <div class="program-card">
+                    <div class="program-icon"><i class="fa-solid fa-book-open"></i></div>
+                    <h3>PCOS Comic</h3>
+                    <p>A relatable comic series about women dealing with PCOS in their daily lives, making education approachable and engaging.</p>
                 </div>
             </div>
         </div>
@@ -158,7 +211,7 @@
         <div class="section-container">
             <h2 class="section-title">The PCOS Diaries</h2>
             <div class="section-line"></div>
-            <p class="section-subtitle">Our podcast where we interview PCOS specialists and provide reliable information for those navigating life with PCOS.</p>
+            <p class="section-subtitle">Interviews with PCOS specialists and stories from women navigating life with PCOS.</p>
             <div class="podcast-grid">
                 <div class="podcast-card">
                     <iframe src="https://www.youtube.com/embed/5lDBDg7c888" title="PCOS Diaries Episode 1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -173,32 +226,41 @@
         </div>
     </section>
 
-    <!-- Current Events -->
-    <section id="events" class="section section-alt">
+    <!-- Chapter Signup Section -->
+    <section id="chapters" class="section section-alt">
         <div class="section-container">
-            <h2 class="section-title">Current Events</h2>
-            <div class="section-line"></div>
-            <div class="events-list">
-                <div class="event-card">
-                    <div class="event-icon"><i class="fa-solid fa-person-walking"></i></div>
-                    <div class="event-info">
-                        <h3>PCOS Awareness Walk</h3>
-                        <p>We are planning a PCOS awareness walk in September for National PCOS Awareness Month. Stay tuned for details!</p>
-                    </div>
+            <div class="chapter-grid">
+                <div class="chapter-form-side">
+                    <p class="section-eyebrow">Join the Movement</p>
+                    <h2 class="section-title left-align">Interested in creating a chapter?</h2>
+                    <div class="section-line left-align"></div>
+                    <p class="chapter-sub">Fill out some info and we will be in touch shortly. We can't wait to hear from you!</p>
+                    <form class="signup-form" id="chapter-form" onsubmit="handleFormSubmit(event)">
+                        <div class="form-row">
+                            <input type="text" placeholder="First Name" required>
+                            <input type="text" placeholder="Last Name" required>
+                        </div>
+                        <input type="email" placeholder="Email Address" required>
+                        <input type="text" placeholder="City" required>
+                        <textarea placeholder="Why do you want to start a BTC chapter?" rows="4" required></textarea>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </form>
+                    <p class="form-success" id="form-success">Thank you! We'll be in touch soon.</p>
                 </div>
-                <div class="event-card">
-                    <div class="event-icon"><i class="fa-solid fa-kit-medical"></i></div>
-                    <div class="event-info">
-                        <h3>PCOS Kit Distribution</h3>
-                        <p>We are distributing PCOS kits to clinics all over the Phoenix area to help women better understand their condition.</p>
+                <div class="chapter-info-side">
+                    <div class="chapter-stat-card">
+                        <span class="chapter-num">5</span>
+                        <span class="chapter-label">Active Chapters</span>
                     </div>
-                </div>
-                <div class="event-card">
-                    <div class="event-icon"><i class="fa-solid fa-book-open"></i></div>
-                    <div class="event-info">
-                        <h3>PCOS Comic</h3>
-                        <p>We are creating a PCOS comic that provides relatable stories about women dealing with PCOS in their daily lives.</p>
+                    <div class="chapter-stat-card">
+                        <span class="chapter-num">120+</span>
+                        <span class="chapter-label">Volunteers Nationwide</span>
                     </div>
+                    <div class="chapter-stat-card">
+                        <span class="chapter-num">$6,700+</span>
+                        <span class="chapter-label">Raised for Research</span>
+                    </div>
+                    <p class="chapter-desc">Join our growing network of passionate advocates fighting to bring PCOS awareness to communities everywhere.</p>
                 </div>
             </div>
         </div>
@@ -207,38 +269,53 @@
     <!-- Donate Section -->
     <section id="donate" class="section donate-section">
         <div class="section-container">
-            <h2 class="section-title">Support Our Mission</h2>
+            <p class="section-eyebrow light">Our Current Fundraiser</p>
+            <h2 class="section-title">Make an Impact Today</h2>
             <div class="section-line"></div>
-            <p class="donate-text">Your support helps us continue raising awareness, distributing PCOS kits, and empowering young women with knowledge about their health.</p>
-            <div class="donate-options">
-                <a href="mailto:breakingthecycle28@gmail.com?Subject=Donation%20Inquiry" class="btn btn-primary btn-large">Donate Now</a>
-                <a href="mailto:breakingthecycle28@gmail.com?Subject=Volunteer%20Inquiry" class="btn btn-secondary btn-large">Volunteer</a>
+            <p class="donate-text">Support Dr. Zhu's PCOS Research at Boston Children's Hospital — helping find better treatments for the millions of women affected by PCOS.</p>
+            <div class="donate-amounts">
+                <button class="amount-btn" onclick="selectAmount(this, 10)">$10</button>
+                <button class="amount-btn" onclick="selectAmount(this, 20)">$20</button>
+                <button class="amount-btn active" onclick="selectAmount(this, 30)">$30</button>
+                <button class="amount-btn" onclick="selectAmount(this, 40)">$40</button>
+                <button class="amount-btn" onclick="selectAmount(this, 'custom')">Custom</button>
             </div>
+            <div class="donate-frequency">
+                <button class="freq-btn active" onclick="selectFreq(this)">One-Time</button>
+                <button class="freq-btn" onclick="selectFreq(this)">Monthly</button>
+                <button class="freq-btn" onclick="selectFreq(this)">Annual</button>
+            </div>
+            <a href="mailto:breakingthecycle28@gmail.com?Subject=Donation%20Inquiry" class="btn btn-donate">Donate</a>
+            <p class="donate-sub">Can't donate? <a href="mailto:breakingthecycle28@gmail.com?Subject=Volunteer%20Inquiry">Volunteer with us</a> instead.</p>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
+    <!-- Footer / Contact -->
+    <footer class="footer" id="contact">
         <div class="footer-container">
             <div class="footer-brand">
-                <img src="logo.png" alt="Breaking the Cycle Logo" class="footer-logo">
+                <img src="logo.png" alt="BreakingTheCycle Logo" class="footer-logo">
                 <p>Empowering young women through PCOS awareness.</p>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/breakingthecycle28" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
             </div>
             <div class="footer-links">
-                <h4>Quick Links</h4>
-                <a href="#about">About Us</a>
-                <a href="#facts">PCOS Facts</a>
+                <h4>Navigate</h4>
+                <a href="#about">About</a>
+                <a href="#programs">Programs</a>
+                <a href="#chapters">Start a Chapter</a>
                 <a href="#podcast">Podcast</a>
-                <a href="#events">Events</a>
+                <a href="#donate">Fundraise With Us</a>
             </div>
             <div class="footer-contact">
-                <h4>Connect with Us</h4>
+                <h4>Contact</h4>
                 <a href="mailto:breakingthecycle28@gmail.com"><i class="fa-solid fa-envelope"></i> breakingthecycle28@gmail.com</a>
                 <a href="https://www.instagram.com/breakingthecycle28" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i> @BreakingTheCycle28</a>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 Breaking the Cycle. All rights reserved.</p>
+            <p>&copy; 2025 BreakingTheCycle. All rights reserved.</p>
         </div>
     </footer>
 
@@ -252,7 +329,6 @@
             navMenu.classList.toggle('active');
         });
 
-        // Close menu when a link is clicked
         document.querySelectorAll('.nav-link').forEach(link => {
             link.addEventListener('click', () => {
                 hamburger.classList.remove('active');
@@ -260,40 +336,82 @@
             });
         });
 
-        // Sticky navbar background on scroll
+        // Sticky navbar on scroll
         window.addEventListener('scroll', () => {
             const navbar = document.getElementById('navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
         });
 
-        // Smooth scroll for anchor links
+        // Smooth scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
+                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
             });
         });
 
         // Scroll-reveal animation
-        const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('visible');
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+        document.querySelectorAll('.section').forEach(section => observer.observe(section));
+
+        // Count-up animation for impact numbers
+        function animateCount(el) {
+            const target = parseInt(el.dataset.target);
+            const prefix = el.dataset.prefix || '';
+            const suffix = el.dataset.suffix || '';
+            const useComma = el.dataset.comma === 'true';
+            const duration = 2000;
+            const startTime = performance.now();
+
+            function update(currentTime) {
+                const elapsed = currentTime - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                const eased = 1 - Math.pow(1 - progress, 3);
+                const current = Math.floor(eased * target);
+                const display = useComma ? current.toLocaleString() : current;
+                el.textContent = prefix + display + suffix;
+                if (progress < 1) requestAnimationFrame(update);
+            }
+
+            requestAnimationFrame(update);
+        }
+
+        const impactObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
+                    entry.target.querySelectorAll('.impact-number[data-target]').forEach(el => animateCount(el));
+                    impactObserver.unobserve(entry.target);
                 }
             });
-        }, observerOptions);
+        }, { threshold: 0.3 });
 
-        document.querySelectorAll('.section').forEach(section => {
-            observer.observe(section);
-        });
+        const impactSection = document.getElementById('impact');
+        if (impactSection) impactObserver.observe(impactSection);
+
+        // Donate amount selector
+        function selectAmount(btn, amount) {
+            document.querySelectorAll('.amount-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+        }
+
+        // Donate frequency selector
+        function selectFreq(btn) {
+            document.querySelectorAll('.freq-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+        }
+
+        // Chapter form submit
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            document.getElementById('chapter-form').style.display = 'none';
+            document.getElementById('form-success').style.display = 'block';
+        }
     </script>
 
 </body>
