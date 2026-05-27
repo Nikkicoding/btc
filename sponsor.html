@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BreakingTheCycle | PCOS Awareness Nonprofit</title>
+    <title>Sponsor Us | BreakingTheCycle</title>
     <link rel="icon" href="logo.png" type="image/png">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
@@ -35,59 +35,48 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <p class="hero-eyebrow">Youth-Led Nonprofit</p>
-            <h1 class="hero-headline">A youth-led nonprofit where expert knowledge meets practical application to drive awareness, fund research, and support women everywhere.</h1>
-            <a href="about.html" class="btn btn-hero">Learn more</a>
-        </div>
-        <div class="hero-scroll-indicator">
-            <i class="fa-solid fa-chevron-down"></i>
-        </div>
-    </section>
-
-    <!-- Marquee -->
-    <div class="marquee-section">
-        <div class="marquee-track">
-            <span>Empowering Women</span><span class="marquee-dot">✦</span>
-            <span>Empowering Women</span><span class="marquee-dot">✦</span>
-            <span>Empowering Women</span><span class="marquee-dot">✦</span>
-            <span>Empowering Women</span><span class="marquee-dot">✦</span>
-            <span>Empowering Women</span><span class="marquee-dot">✦</span>
-            <span>Empowering Women</span><span class="marquee-dot">✦</span>
-            <span aria-hidden="true">Empowering Women</span><span class="marquee-dot" aria-hidden="true">✦</span>
-            <span aria-hidden="true">Empowering Women</span><span class="marquee-dot" aria-hidden="true">✦</span>
-            <span aria-hidden="true">Empowering Women</span><span class="marquee-dot" aria-hidden="true">✦</span>
-            <span aria-hidden="true">Empowering Women</span><span class="marquee-dot" aria-hidden="true">✦</span>
-            <span aria-hidden="true">Empowering Women</span><span class="marquee-dot" aria-hidden="true">✦</span>
-            <span aria-hidden="true">Empowering Women</span><span class="marquee-dot" aria-hidden="true">✦</span>
-        </div>
-    </div>
-
-    <!-- Impact Section -->
-    <section id="impact" class="section impact-section">
+    <!-- Sponsor Section -->
+    <section id="sponsor" class="section sponsor-section">
         <div class="section-container">
-            <h2 class="section-title">Our Impact</h2>
-            <div class="section-line"></div>
-            <p class="section-subtitle">From educational outreach to research funding, our work turns awareness into action.</p>
-            <div class="impact-grid">
-                <div class="impact-card">
-                    <div class="impact-number" data-target="6700" data-prefix="$" data-suffix="+">$0+</div>
-                    <p>Raised for PMOS Research</p>
+            <div class="sponsor-grid">
+                <div class="sponsor-info-side">
+                    <p class="section-eyebrow">Partner With Us</p>
+                    <h2 class="section-title left-align">Become a Sponsor</h2>
+                    <div class="section-line left-align"></div>
+                    <p class="sponsor-desc">Your company's support helps us fund PMOS research, distribute awareness kits, and reach thousands of young women. Every sponsor is recognized for their commitment to women's health.</p>
+                    <div class="sponsor-perks">
+                        <div class="sponsor-perk">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Logo featured on our website</span>
+                        </div>
+                        <div class="sponsor-perk">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Shoutout on our social media channels</span>
+                        </div>
+                        <div class="sponsor-perk">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Recognition at our annual PMOS Awareness Walk</span>
+                        </div>
+                        <div class="sponsor-perk">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Certificate of appreciation from our team</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="impact-card">
-                    <div class="impact-number" data-target="120000" data-comma="true">0</div>
-                    <p>Reached through Social Media</p>
-                </div>
-                <div class="impact-card">
-                    <div class="impact-number" data-target="120" data-suffix="+">0+</div>
-                    <p>Volunteers</p>
-                </div>
-                <div class="impact-card">
-                    <div class="impact-number" data-target="5">0</div>
-                    <p>Chapters</p>
+                <div class="sponsor-form-side">
+                    <form class="signup-form" id="sponsor-form" action="https://formspree.io/f/mnjrogrb" method="POST">
+                        <div class="form-row">
+                            <input type="text" name="first_name" placeholder="First Name" required>
+                            <input type="text" name="last_name" placeholder="Last Name" required>
+                        </div>
+                        <input type="text" name="company_name" placeholder="Company Name" required>
+                        <input type="email" name="email" placeholder="Email Address" required>
+                        <input type="tel" name="phone" placeholder="Phone Number (optional)">
+                        <input type="url" name="website" placeholder="Company Website (optional)">
+                        <textarea name="message" placeholder="Tell us about your company and why you'd like to sponsor BreakingTheCycle." rows="4" required></textarea>
+                        <button type="submit" class="btn btn-primary">Submit Interest</button>
+                    </form>
+                    <p class="form-success" id="sponsor-success">Thank you! We'll reach out within 2–3 business days.</p>
                 </div>
             </div>
         </div>
@@ -148,33 +137,14 @@
         }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
         document.querySelectorAll('.section').forEach(section => observer.observe(section));
 
-        function animateCount(el) {
-            const target = parseInt(el.dataset.target);
-            const prefix = el.dataset.prefix || '';
-            const suffix = el.dataset.suffix || '';
-            const useComma = el.dataset.comma === 'true';
-            const duration = 2000;
-            const startTime = performance.now();
-            function update(currentTime) {
-                const elapsed = currentTime - startTime;
-                const progress = Math.min(elapsed / duration, 1);
-                const eased = 1 - Math.pow(1 - progress, 3);
-                const current = Math.floor(eased * target);
-                el.textContent = prefix + (useComma ? current.toLocaleString() : current) + suffix;
-                if (progress < 1) requestAnimationFrame(update);
-            }
-            requestAnimationFrame(update);
-        }
-        const impactObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.querySelectorAll('.impact-number[data-target]').forEach(el => animateCount(el));
-                    impactObserver.unobserve(entry.target);
-                }
+        const sponsorForm = document.getElementById('sponsor-form');
+        if (sponsorForm) {
+            sponsorForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                sponsorForm.style.display = 'none';
+                document.getElementById('sponsor-success').style.display = 'block';
             });
-        }, { threshold: 0.3 });
-        const impactSection = document.getElementById('impact');
-        if (impactSection) impactObserver.observe(impactSection);
+        }
     </script>
 </body>
 </html>

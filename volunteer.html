@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BreakingTheCycle | PCOS Awareness Nonprofit</title>
+    <title>Volunteer | BreakingTheCycle</title>
     <link rel="icon" href="logo.png" type="image/png">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
@@ -35,59 +35,27 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <p class="hero-eyebrow">Youth-Led Nonprofit</p>
-            <h1 class="hero-headline">A youth-led nonprofit where expert knowledge meets practical application to drive awareness, fund research, and support women everywhere.</h1>
-            <a href="about.html" class="btn btn-hero">Learn more</a>
-        </div>
-        <div class="hero-scroll-indicator">
-            <i class="fa-solid fa-chevron-down"></i>
-        </div>
-    </section>
-
-    <!-- Marquee -->
-    <div class="marquee-section">
-        <div class="marquee-track">
-            <span>Empowering Women</span><span class="marquee-dot">✦</span>
-            <span>Empowering Women</span><span class="marquee-dot">✦</span>
-            <span>Empowering Women</span><span class="marquee-dot">✦</span>
-            <span>Empowering Women</span><span class="marquee-dot">✦</span>
-            <span>Empowering Women</span><span class="marquee-dot">✦</span>
-            <span>Empowering Women</span><span class="marquee-dot">✦</span>
-            <span aria-hidden="true">Empowering Women</span><span class="marquee-dot" aria-hidden="true">✦</span>
-            <span aria-hidden="true">Empowering Women</span><span class="marquee-dot" aria-hidden="true">✦</span>
-            <span aria-hidden="true">Empowering Women</span><span class="marquee-dot" aria-hidden="true">✦</span>
-            <span aria-hidden="true">Empowering Women</span><span class="marquee-dot" aria-hidden="true">✦</span>
-            <span aria-hidden="true">Empowering Women</span><span class="marquee-dot" aria-hidden="true">✦</span>
-            <span aria-hidden="true">Empowering Women</span><span class="marquee-dot" aria-hidden="true">✦</span>
-        </div>
-    </div>
-
-    <!-- Impact Section -->
-    <section id="impact" class="section impact-section">
+    <!-- Volunteer Section -->
+    <section id="volunteer" class="section two-col-section">
         <div class="section-container">
-            <h2 class="section-title">Our Impact</h2>
-            <div class="section-line"></div>
-            <p class="section-subtitle">From educational outreach to research funding, our work turns awareness into action.</p>
-            <div class="impact-grid">
-                <div class="impact-card">
-                    <div class="impact-number" data-target="6700" data-prefix="$" data-suffix="+">$0+</div>
-                    <p>Raised for PMOS Research</p>
+            <div class="two-col-grid">
+                <div class="two-col-image">
+                    <img src="bracelets.jpg" alt="BTC Bracelets">
                 </div>
-                <div class="impact-card">
-                    <div class="impact-number" data-target="120000" data-comma="true">0</div>
-                    <p>Reached through Social Media</p>
-                </div>
-                <div class="impact-card">
-                    <div class="impact-number" data-target="120" data-suffix="+">0+</div>
-                    <p>Volunteers</p>
-                </div>
-                <div class="impact-card">
-                    <div class="impact-number" data-target="5">0</div>
-                    <p>Chapters</p>
+                <div class="two-col-text">
+                    <p class="section-eyebrow">Get Involved</p>
+                    <h2 class="section-title left-align">Volunteer With Us</h2>
+                    <div class="section-line left-align"></div>
+                    <p>One of the easiest and most meaningful ways to support BreakingTheCycle is by making PMOS awareness bracelets. These bracelets help spread the word and show solidarity with women affected by PMOS.</p>
+                    <p style="margin-top: 16px;">Simply make your bracelets at home and mail them directly to our school — we'll take care of the rest!</p>
+                    <div class="volunteer-address">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <strong>Arizona College Preparatory — Erie Campus</strong>
+                            <span>4477 S Gilbert Rd, Chandler, AZ 85249</span>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary" style="margin-top: 28px; display: inline-block;">Contact Us to Volunteer</a>
                 </div>
             </div>
         </div>
@@ -147,34 +115,6 @@
             });
         }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
         document.querySelectorAll('.section').forEach(section => observer.observe(section));
-
-        function animateCount(el) {
-            const target = parseInt(el.dataset.target);
-            const prefix = el.dataset.prefix || '';
-            const suffix = el.dataset.suffix || '';
-            const useComma = el.dataset.comma === 'true';
-            const duration = 2000;
-            const startTime = performance.now();
-            function update(currentTime) {
-                const elapsed = currentTime - startTime;
-                const progress = Math.min(elapsed / duration, 1);
-                const eased = 1 - Math.pow(1 - progress, 3);
-                const current = Math.floor(eased * target);
-                el.textContent = prefix + (useComma ? current.toLocaleString() : current) + suffix;
-                if (progress < 1) requestAnimationFrame(update);
-            }
-            requestAnimationFrame(update);
-        }
-        const impactObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.querySelectorAll('.impact-number[data-target]').forEach(el => animateCount(el));
-                    impactObserver.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.3 });
-        const impactSection = document.getElementById('impact');
-        if (impactSection) impactObserver.observe(impactSection);
     </script>
 </body>
 </html>

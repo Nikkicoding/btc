@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BreakingTheCycle | PCOS Awareness Nonprofit</title>
+    <title>Fundraise With Us | BreakingTheCycle</title>
     <link rel="icon" href="logo.png" type="image/png">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
@@ -35,60 +35,35 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <p class="hero-eyebrow">Youth-Led Nonprofit</p>
-            <h1 class="hero-headline">A youth-led nonprofit where expert knowledge meets practical application to drive awareness, fund research, and support women everywhere.</h1>
-            <a href="about.html" class="btn btn-hero">Learn more</a>
-        </div>
-        <div class="hero-scroll-indicator">
-            <i class="fa-solid fa-chevron-down"></i>
-        </div>
-    </section>
-
-    <!-- Marquee -->
-    <div class="marquee-section">
-        <div class="marquee-track">
-            <span>Empowering Women</span><span class="marquee-dot">✦</span>
-            <span>Empowering Women</span><span class="marquee-dot">✦</span>
-            <span>Empowering Women</span><span class="marquee-dot">✦</span>
-            <span>Empowering Women</span><span class="marquee-dot">✦</span>
-            <span>Empowering Women</span><span class="marquee-dot">✦</span>
-            <span>Empowering Women</span><span class="marquee-dot">✦</span>
-            <span aria-hidden="true">Empowering Women</span><span class="marquee-dot" aria-hidden="true">✦</span>
-            <span aria-hidden="true">Empowering Women</span><span class="marquee-dot" aria-hidden="true">✦</span>
-            <span aria-hidden="true">Empowering Women</span><span class="marquee-dot" aria-hidden="true">✦</span>
-            <span aria-hidden="true">Empowering Women</span><span class="marquee-dot" aria-hidden="true">✦</span>
-            <span aria-hidden="true">Empowering Women</span><span class="marquee-dot" aria-hidden="true">✦</span>
-            <span aria-hidden="true">Empowering Women</span><span class="marquee-dot" aria-hidden="true">✦</span>
-        </div>
-    </div>
-
-    <!-- Impact Section -->
-    <section id="impact" class="section impact-section">
+    <!-- Donate Section -->
+    <section id="donate" class="section donate-section">
         <div class="section-container">
-            <h2 class="section-title">Our Impact</h2>
+            <p class="section-eyebrow light">Our Current Fundraiser</p>
+            <h2 class="section-title">Make an Impact Today</h2>
             <div class="section-line"></div>
-            <p class="section-subtitle">From educational outreach to research funding, our work turns awareness into action.</p>
-            <div class="impact-grid">
-                <div class="impact-card">
-                    <div class="impact-number" data-target="6700" data-prefix="$" data-suffix="+">$0+</div>
-                    <p>Raised for PMOS Research</p>
-                </div>
-                <div class="impact-card">
-                    <div class="impact-number" data-target="120000" data-comma="true">0</div>
-                    <p>Reached through Social Media</p>
-                </div>
-                <div class="impact-card">
-                    <div class="impact-number" data-target="120" data-suffix="+">0+</div>
-                    <p>Volunteers</p>
-                </div>
-                <div class="impact-card">
-                    <div class="impact-number" data-target="5">0</div>
-                    <p>Chapters</p>
-                </div>
+            <p class="donate-text">Support our initiatives by donating to us directly — every contribution helps us raise awareness, fund research, and empower women everywhere.</p>
+            <div class="donate-amounts">
+                <button class="amount-btn" onclick="selectAmount(this, 10)">$10</button>
+                <button class="amount-btn" onclick="selectAmount(this, 20)">$20</button>
+                <button class="amount-btn active" onclick="selectAmount(this, 30)">$30</button>
+                <button class="amount-btn" onclick="selectAmount(this, 40)">$40</button>
+                <button class="amount-btn" onclick="selectAmount(this, 'custom')">Custom</button>
+            </div>
+            <div class="donate-frequency">
+                <button class="freq-btn active" onclick="selectFreq(this)">One-Time</button>
+                <button class="freq-btn" onclick="selectFreq(this)">Monthly</button>
+                <button class="freq-btn" onclick="selectFreq(this)">Annual</button>
+            </div>
+            <a href="https://checkout.square.site/merchant/ML2024N86Z0TC/checkout/PUNZ3MWCZ3QM3F3FDSMFDGRC" target="_blank" rel="noopener" class="btn btn-donate">Donate</a>
+            <p class="donate-sub">Can't donate? <a href="mailto:breakingthecycle28@gmail.com?Subject=Volunteer%20Inquiry">Volunteer with us</a> instead.</p>
+
+            <div class="donate-divider"></div>
+
+            <div class="donate-fundraiser">
+                <p class="donate-fundraiser-eyebrow">Featured Fundraiser</p>
+                <h3 class="donate-fundraiser-title">Dr. Zhu's PMOS Research</h3>
+                <p class="donate-fundraiser-desc">Support Dr. Zhu's groundbreaking PMOS research at Boston Children's Hospital — helping find better treatments for the millions of women affected by PMOS.</p>
+                <a href="https://secure.childrenshospital.org/site/TR;jsessionid=00000000.app20110a?px=3124679&fr_id=2510&pg=personal&NONCE_TOKEN=1F5CAA955D2D10E6E56530632FA77A19" target="_blank" rel="noopener" class="btn btn-donate-secondary">Support This Research →</a>
             </div>
         </div>
     </section>
@@ -148,33 +123,15 @@
         }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
         document.querySelectorAll('.section').forEach(section => observer.observe(section));
 
-        function animateCount(el) {
-            const target = parseInt(el.dataset.target);
-            const prefix = el.dataset.prefix || '';
-            const suffix = el.dataset.suffix || '';
-            const useComma = el.dataset.comma === 'true';
-            const duration = 2000;
-            const startTime = performance.now();
-            function update(currentTime) {
-                const elapsed = currentTime - startTime;
-                const progress = Math.min(elapsed / duration, 1);
-                const eased = 1 - Math.pow(1 - progress, 3);
-                const current = Math.floor(eased * target);
-                el.textContent = prefix + (useComma ? current.toLocaleString() : current) + suffix;
-                if (progress < 1) requestAnimationFrame(update);
-            }
-            requestAnimationFrame(update);
+        function selectAmount(btn, amount) {
+            document.querySelectorAll('.amount-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
         }
-        const impactObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.querySelectorAll('.impact-number[data-target]').forEach(el => animateCount(el));
-                    impactObserver.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.3 });
-        const impactSection = document.getElementById('impact');
-        if (impactSection) impactObserver.observe(impactSection);
+
+        function selectFreq(btn) {
+            document.querySelectorAll('.freq-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+        }
     </script>
 </body>
 </html>
