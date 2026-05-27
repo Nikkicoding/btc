@@ -24,7 +24,7 @@
                 <span></span>
             </button>
             <ul class="nav-menu" id="nav-menu">
-                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
                 <li><a href="programs.html" class="nav-link">Programs</a></li>
                 <li><a href="donate.html" class="nav-link">Fundraise With Us</a></li>
                 <li><a href="volunteer.html" class="nav-link">Volunteer</a></li>
@@ -35,45 +35,86 @@
         </div>
     </nav>
 
-    <!-- Contact Section -->
-    <section id="contact-page" class="section">
-        <div class="section-container">
-            <p class="section-eyebrow">Reach Out</p>
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="section-line"></div>
-            <p class="section-subtitle">We'd love to hear from you — whether you have a question, want to volunteer, start a chapter, or explore sponsorship opportunities.</p>
+    <!-- Contact Hero Banner -->
+    <div class="contact-hero">
+        <p class="hero-eyebrow">We'd Love To Hear From You</p>
+        <h1 class="contact-hero-title">Get In Touch</h1>
+        <p class="contact-hero-sub">Questions, ideas, partnerships — we're always open.</p>
+    </div>
 
-            <div class="contact-grid">
-                <div class="contact-card">
-                    <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
-                    <h3>Email Us</h3>
-                    <p>For general inquiries, partnership opportunities, or just to say hello.</p>
-                    <a href="mailto:breakingthecycle28@gmail.com" class="contact-link">breakingthecycle28@gmail.com</a>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-icon"><i class="fa-brands fa-instagram"></i></div>
-                    <h3>Follow Us</h3>
-                    <p>Stay up to date with our latest events, stories, and announcements.</p>
-                    <a href="https://www.instagram.com/breakingthecycle28" target="_blank" rel="noopener" class="contact-link">@BreakingTheCycle28</a>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-icon"><i class="fa-solid fa-people-group"></i></div>
-                    <h3>Volunteer</h3>
-                    <p>Interested in volunteering or starting a BTC chapter in your community? We'd love to connect.</p>
-                    <a href="about.html#chapters" class="contact-link">Start a Chapter →</a>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-icon"><i class="fa-solid fa-handshake"></i></div>
-                    <h3>Sponsor Us</h3>
-                    <p>Want to support our mission as a business or organization? Learn about our sponsorship opportunities.</p>
-                    <a href="sponsor.html" class="contact-link">Become a Sponsor →</a>
-                </div>
+    <!-- Contact Section -->
+    <section id="contact-page" class="section contact-section">
+        <div class="section-container">
+
+            <div class="contact-cards-grid">
+                <a href="mailto:breakingthecycle28@gmail.com" class="contact-card-link">
+                    <div class="contact-card">
+                        <div class="contact-icon-circle" style="background: linear-gradient(135deg, #4A9B9B, #2D7A7A);">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <h3>Email Us</h3>
+                        <p>For general inquiries, questions, or just to say hello.</p>
+                        <span class="contact-detail">breakingthecycle28@gmail.com</span>
+                    </div>
+                </a>
+
+                <a href="https://www.instagram.com/breakingthecycle28" target="_blank" rel="noopener" class="contact-card-link">
+                    <div class="contact-card">
+                        <div class="contact-icon-circle" style="background: linear-gradient(135deg, #e1306c, #833ab4);">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <h3>Follow Us</h3>
+                        <p>Stay up to date with our latest events, stories, and announcements.</p>
+                        <span class="contact-detail">@BreakingTheCycle28</span>
+                    </div>
+                </a>
+
+                <a href="index.html#chapters" class="contact-card-link">
+                    <div class="contact-card">
+                        <div class="contact-icon-circle" style="background: linear-gradient(135deg, #F48FB1, #e06090);">
+                            <i class="fa-solid fa-people-group"></i>
+                        </div>
+                        <h3>Start a Chapter</h3>
+                        <p>Interested in bringing BreakingTheCycle to your school or community?</p>
+                        <span class="contact-detail">Apply Now →</span>
+                    </div>
+                </a>
+
+                <a href="sponsor.html" class="contact-card-link">
+                    <div class="contact-card">
+                        <div class="contact-icon-circle" style="background: linear-gradient(135deg, #f9a825, #e65100);">
+                            <i class="fa-solid fa-handshake"></i>
+                        </div>
+                        <h3>Sponsor Us</h3>
+                        <p>Support our mission as a business or organization and get recognized.</p>
+                        <span class="contact-detail">Learn More →</span>
+                    </div>
+                </a>
             </div>
+
+            <!-- Contact Form -->
+            <div class="contact-cta">
+                <p class="section-eyebrow" style="text-align:center;">Send A Message</p>
+                <h2 class="section-title" style="margin-bottom: 8px;">We'll get back to you shortly</h2>
+                <div class="section-line"></div>
+                <form class="signup-form contact-form" action="https://formspree.io/f/mgoqpprb" method="POST">
+                    <div class="form-row">
+                        <input type="text" name="first_name" placeholder="First Name" required>
+                        <input type="text" name="last_name" placeholder="Last Name" required>
+                    </div>
+                    <input type="email" name="email" placeholder="Email Address" required>
+                    <input type="text" name="subject" placeholder="Subject">
+                    <textarea name="message" placeholder="Your message..." rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+                <p class="form-success" id="contact-success" style="display:none;">Thank you! We'll be in touch soon.</p>
+            </div>
+
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer" id="contact">
+    <footer class="footer">
         <div class="footer-container">
             <div class="footer-brand">
                 <img src="logo.png" alt="BreakingTheCycle Logo" class="footer-logo">
@@ -84,7 +125,7 @@
             </div>
             <div class="footer-links">
                 <h4>Navigate</h4>
-                <a href="about.html">About</a>
+                <a href="index.html#about">About</a>
                 <a href="programs.html">Programs</a>
                 <a href="volunteer.html">Volunteer</a>
                 <a href="donate.html">Fundraise With Us</a>
@@ -104,27 +145,11 @@
     <script>
         const hamburger = document.getElementById('hamburger');
         const navMenu = document.getElementById('nav-menu');
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            navMenu.classList.toggle('active');
-        });
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', () => {
-                hamburger.classList.remove('active');
-                navMenu.classList.remove('active');
-            });
-        });
-        window.addEventListener('scroll', () => {
-            document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
-        });
-        if (!document.querySelector('.hero')) {
-            document.getElementById('navbar').classList.add('scrolled');
-        }
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) entry.target.classList.add('visible');
-            });
-        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+        hamburger.addEventListener('click', () => { hamburger.classList.toggle('active'); navMenu.classList.toggle('active'); });
+        document.querySelectorAll('.nav-link').forEach(link => { link.addEventListener('click', () => { hamburger.classList.remove('active'); navMenu.classList.remove('active'); }); });
+        window.addEventListener('scroll', () => { document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50); });
+        if (!document.querySelector('.hero')) { document.getElementById('navbar').classList.add('scrolled'); }
+        const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); }); }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
         document.querySelectorAll('.section').forEach(section => observer.observe(section));
     </script>
 </body>
